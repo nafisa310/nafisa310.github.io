@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Example</title>
+</head>
+<body>
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  h1 {
+      color: white;
+      font-family: ubutnu;
+      font-size: 300%;
+  }
+  p  {
+      color: white;
+      font-family: ubuntu;
+      font-size: 160%;
+  }
+  </style>
+  </head>
+  <body>
+
+
+
+
+
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  body {background-color: pink;}
+  h1   {color: white;}
+  p    {color: white;}
+  </style>
+  </head>
+  <body>
+
+
+
+<div align="center" id = "myDiv">
+
+
+  <h1>Ubbi Dubbi Translator</h1>
+      <br>
+      <input type="text" name="input" id = "myText"><br>
+
+        <input type="button" value="Submit" name = "SubmitButton" onclick=CapA()>
+      <br>
+
+<p id="sample"></p>
+
+<script type="text/javascript">
+
+function CapA(){
+var outString = "";
+var inString = document.getElementById("myText").value;
+  for (var i=0; i<inString.length; i+=1){
+    if (inString.charAt(i)=="a"){
+      outString += "Uba";
+    }
+  else  if (inString.charAt(i)=="i"){
+      outString += "Ubi";
+    }
+  else if (inString.charAt(i)=="o"){
+    outString += "Ubo";
+  }
+ else if (inString.charAt(i)=="u"){
+    outString += "Ubu"
+ }
+  else if (inString.charAt(i)=="e"){
+    outString += "Ube"
+  }
+        else{
+        outString += inString.charAt(i);
+        }
+  }
+
+
+
+document.getElementById("sample").innerHTML = outString;
+}
+    </script>
+
+</body>
+</html>
