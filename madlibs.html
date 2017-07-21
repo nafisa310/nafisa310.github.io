@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mad Libs</title>
+</head>
+<body>
+
+<body>
+
+<div align="center" id = "myDiv">
+
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  body {background-color: orange;}
+  h1   {color: white;}
+  p    {color: white;}
+  </style>
+  </head>
+  <body>
+
+
+
+  <div id = "myDiv">
+    NOUN <input type="text" name="baseinput" id="myText">
+  <br/ >
+  Choose an option:
+  <input type="radio" id="radio1" name="myRadio">
+  <input type="radio" id="radio2" name="myRadio">
+  <input type="radio" id="radio3" name="myRadio">
+  <input type="radio" id="radio4" name="myRadio">
+  <br/ >
+  <br/ >
+  <input type="button" value="Submit" onclick="getTextInput()">
+  <inpute type = "">
+</div>
+
+
+<script type = "text/javascript">
+
+
+  function getTextInput(){
+    var input = document.getElementById("myText").value;
+    var dessertString = "My favorite dessert is ";
+
+     if(input == "Pie" || input == "pie" && document.getElementById("radio1").checked){
+      document.getElementById("myDiv").innerHTML += "<br />" +"<br />" + input+ " is gross!";
+      }
+    else{
+      document.getElementById("myDiv").innerHTML += "<br / >" +"<br />" + dessertString+input;
+      }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<body>
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  body {background-color: teal;}
+  h1   {color: white;}
+  p    {color: white;}
+  </style>
+  </head>
+  <body>
+
+<div align="center" id = "myDiv">
+
+  <h1>PERSONALITY QUIZ</h1>
+  <p>  </p>
+
+  <div align="center" id = "myDiv">
+
+  <br/ >
+  What's your favorite snack?:
+
+  <br/>
+
+  <input type = "radio" name = "SnackQuestions" id="snack1">
+  <label for="snack1">Chips</label>
+
+
+  <input type = "radio" name = "SnackQuestions" id="snack2">
+  <label for="snack2">Pizza</label>
+
+
+  <input type = "radio" name = "SnackQuestions" id="snack3">
+  <label for="snack3">Cookies</label>
+
+
+  <input type = "radio" name = "SnackQuestions" id="snack4">
+  <label for="snack4">Sandwich</label>
+
+  <br/ >
+  <br/ >
+
+
+  <br/>
+  What's your favorite color?:
+
+    <br/>
+
+    <input type = "radio" name = "ColorQuestions" id="color1">
+    <label for="color1">Red</label>
+
+
+    <input type = "radio" name = "ColorQuestions" id="color2">
+    <label for="color2">Orange</label>
+
+
+    <input type = "radio" name = "ColorQuestions" id="color3">
+    <label for="color3">Yellow</label>
+
+
+    <input type = "radio" name = "ColorQuestions" id="color4">
+    <label for="color4">Green</label>
+
+
+    <input type = "radio" name = "ColorQuestions" id="color5">
+    <label for="color5">Blue</label>
+
+
+    <input type = "radio" name = "ColorQuestions" id="color6">
+    <label for="color6">Purple</label>
+
+
+    <input type = "radio" name = "ColorQuestions" id="color7">
+    <label for="color7">Black</label>
+
+
+    <br/ >
+    <br/ >
+
+
+
+
+
+  <br/ >
+  What's a word your friends and family would use to describe you?:
+
+  <br/>
+
+  <input type = "radio" name = "DescribeQuestions" id="describe1">
+  <label for="describe1">Crazy</label>
+
+
+  <input type = "radio" name = "DescribeQuestions" id="describe2">
+  <label for="describe2">Goofy</label>
+
+
+  <input type = "radio" name = "DescribeQuestions" id="describe3">
+  <label for="describe3">Mean</label>
+
+
+  <input type = "radio" name = "DescribeQuestions" id="describe4">
+  <label for="describe4">Outgoing</label>
+
+
+  <br/ >
+  <br/ >
+
+
+
+
+
+  <br/ >
+  What is most important to you?:
+
+
+  <br/ >
+
+  <input type = "radio" name = "ImportantQuestions" id="important1">
+  <label for="important1">Social Media</label>
+
+
+  <input type = "radio" name = "ImportantQuestions" id="important2">
+  <label for="important2">Wifi</label>
+
+
+  <input type = "radio" name = "ImportantQuestions" id="important3">
+  <label for="important3">Education</label>
+
+
+  <input type = "radio" name = "ImportantQuestions" id="important4">
+  <label for="important4">Family and friends relationships</label>
+
+
+  <br/ >
+  <br/ >
+
+
+  <br/ >
+  <input type="button" value="What's my personality?" name = "SubmitButton" onclick="getPersonality()">
+  <inpute type = "">
+
+<br/ >
+
+</div>
+
+
+<script type = "text/javascript">
+
+
+  function getPersonality(){
+    var typeOneScore = 0;
+    var typeTwoScore = 0;
+    var typeThreeScore = 0;
+
+
+     if( document.getElementById("snack1").checked){
+    typeOneScore += 1;
+      }
+    else if ( document.getElementById("snack2").checked){
+      typeTwoScore += 1;
+      }
+    else if( document.getElementById("snack3").checked){
+     typeThreeScore += 1;
+       }
+     else if ( document.getElementById("snack4").checked){
+       typeOneScore += 1;
+    }
+
+
+
+
+    if( document.getElementById("color1").checked){
+    typeOneScore += 1;
+     }
+    else if ( document.getElementById("color2").checked){
+     typeTwoScore += 1;
+     }
+    else if( document.getElementById("color3").checked){
+    typeThreeScore += 1;
+      }
+    else if ( document.getElementById("color4").checked){
+      typeOneScore += 1;
+      }
+      if( document.getElementById("color5").checked){
+     typeOneScore += 1;
+       }
+     else if ( document.getElementById("color6").checked){
+       typeTwoScore += 1;
+       }
+     else if( document.getElementById("snack7").checked){
+      typeThreeScore += 1;
+    }
+
+
+
+
+
+
+    if( document.getElementById("describe1").checked){
+    typeOneScore += 1;
+     }
+    else if ( document.getElementById("describe2").checked){
+     typeTwoScore += 1;
+     }
+    else if( document.getElementById("describe3").checked){
+    typeThreeScore += 1;
+      }
+    else if ( document.getElementById("describe4").checked){
+      typeOneScore += 1;
+    }
+
+
+
+
+
+    if( document.getElementById("important1").checked){
+    typeOneScore += 1;
+     }
+    else if ( document.getElementById("important2").checked){
+     typeTwoScore += 1;
+     }
+    else if( document.getElementById("important3").checked){
+    typeThreeScore += 1;
+      }
+    else if ( document.getElementById("important4").checked){
+      typeOneScore += 1;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    if(typeOneScore > typeTwoScore && typeOneScore > typeThreeScore){
+      document.getElementById("myDiv").innerHTML += "";
+
+    }
+    else if(typeTwoScore > typeOneScore && typeTwoScore > typeThreeScore) {
+    document.getElementById("myDiv").innerHTML += "";
+    }
+    else if(typeThreeScore > typeOneScore && typeThreeScore > typeTwoScore){
+      document.getElementById("myDiv").innerHTML += "";
+    }
+  }
+
+</script>
+</body>
+</html>
+
+
+
+</body>
+</html>
